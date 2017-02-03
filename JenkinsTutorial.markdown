@@ -25,6 +25,7 @@ sudo apt-get install jenkins
 	```
 	- Copy password and paste password into login screen in browser  
 	- Install Plugins 
+		- Install suggested plugins  
 		- Custon Install plugins 
 			- Email Extension Plugin
 			- Mailer Plugin 
@@ -40,13 +41,12 @@ sudo apt-get install jenkins
 			- Matrix Authorization Strategy Plugin 
 			- PAM Authentication Plugn 
 			- LDAP Plugin 
-		- Install suggested plugins  
 - Setup Administrator Account 
 - Setting Up a Test Project 		
 	- Configuring Project 
 		- Setting up Github integration 
 			- add project url and github url:  
-			![](/home/nextdroid/develop/jenkins/ContinuousIntegrationTestRepo/githubIntegration.png)
+			![](/home/nextdroid/develop/jenkins/ContinuousIntegrationTestRepo/githubIntegration.jpeg)
 		- Add Github authenication 
 	- Adding build steps 
 		- Jenkins supports bash integration 
