@@ -53,7 +53,7 @@ sudo apt-get install jenkins
 	- Running Test Build 
 		- Hit build now button: ![](/home/nextdroid/develop/jenkins/ContinuousIntegrationTestRepo/buildnow.png)
 	- Finished Basic Setup! 
-- Triggering Build on Every Commit 
+- Triggering Build on Every Push 
 	
 	
 	
