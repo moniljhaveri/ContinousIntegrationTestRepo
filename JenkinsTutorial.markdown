@@ -54,7 +54,22 @@ sudo apt-get install jenkins
 		- Hit build now button: ![](/home/nextdroid/develop/jenkins/ContinuousIntegrationTestRepo/buildnow.png)
 	- Finished Basic Setup! 
 - Triggering Build on Every Push 
+	- Setting Up localhost tunnelling 
+		- Install ngrok 
+		- [Download](https://ngrok.com/download)
+		- Installing ngrok in Ubuntu and tunneling to localhost			
+<!---```
+unzip  /path/to/ngrok.zip 
+./ngrok http 8080 
+``` --> 
+		-  copy new *.io address 
+		- go to the github repo and hit settings 
+		- hit webhooks and paste the *.io/github-webhook/into the payload url 		
+		<img src="/home/nextdroid/develop/jenkins/ContinousIntegrationTestRepo/webhooks.png" width="200" length="100">
+		- dsf
+		
+		
+		 
 	
-	
-	
-
+			
+ 
