@@ -1,4 +1,15 @@
-### Jenkins Tutorial 
+### Jenkins Tutorial
+---
+ Author: Monil Jhaveri 
+ Version History 
+
+
+
+| Version #  | Date |
+|:-----------:|:-------------:|
+| 1.0.0     | 2/3/2017 |
+
+
 #### Purpose
 - To guide a developer to create a simple Jenkins build server   
 #### Installation (Ubuntu)
@@ -46,28 +57,38 @@ sudo apt-get install jenkins
 	- Configuring Project 
 		- Setting up Github integration 
 			- add project url and github url:  
-			![](/home/nextdroid/develop/jenkins/ContinuousIntegrationTestRepo/githubIntegration.jpeg)
+			<img src="/home/nextdroid/develop/jenkins/ContinousIntegrationTestRepo/githubIntegration.jpeg" width="400" lenght="200">
 		- Add Github authenication 
 	- Adding build steps 
 		- Jenkins supports bash integration 
 	- Running Test Build 
-		- Hit build now button: ![](/home/nextdroid/develop/jenkins/ContinuousIntegrationTestRepo/buildnow.png)
+		- Hit build now button:
+
+		 <img src="/home/nextdroid/develop/jenkins/ContinousIntegrationTestRepo/Buildnow.png" width="400" length="200">
 	- Finished Basic Setup! 
+	
 - Triggering Build on Every Push 
 	- Setting Up localhost tunnelling 
 		- Install ngrok 
 		- [Download](https://ngrok.com/download)
 		- Installing ngrok in Ubuntu and tunneling to localhost			
-<!---```
-unzip  /path/to/ngrok.zip 
-./ngrok http 8080 
-``` --> 
-		-  copy new *.io address 
-		- go to the github repo and hit settings 
-		- hit webhooks and paste the *.io/github-webhook/into the payload url 		
-		<img src="/home/nextdroid/develop/jenkins/ContinousIntegrationTestRepo/webhooks.png" width="200" length="100">
-		- dsf
-		
+	``` 
+	unzip  /path/to/ngrok.zip  && ./ngrok http 8080 
+	```
+
+	- copy new *.io address 
+	-  go to the github repo and hit settings
+	- hit webhooks and paste the *.io/github-webhook/ into the payload url 		
+
+	<img src="/home/nextdroid/develop/jenkins/ContinousIntegrationTestRepo/webhooks.png" width="400" length="200">
+
+	- Configuring Jenkins 
+		- Navigate to project 
+		- Hit Configure 
+		- Check the Github hook trigger for GITScm polling 
+ 
+	<img src="/home/nextdroid/develop/jenkins/ContinousIntegrationTestRepo/GITScm.png" width="400" length="200">
+	
 		
 		 
 	
